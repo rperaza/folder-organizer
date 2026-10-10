@@ -4,10 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --watch server/index.js",
+    "start": "node server/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "module",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.x.x",
+    "dotenv": "^17.x.x",
+    "express": "^5.x.x"
+  }
 }
